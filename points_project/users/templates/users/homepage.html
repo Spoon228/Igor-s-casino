@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'users/styles.css' %}">
+</head>
+<body>
+    <div id = "homepageBackground">
+        <h1>Welcome to <br>Igor's leggal casino online</h1>
+    {% if user.is_authenticated %}
+        <p>Hello, {{ user.username }}!</p>
+        <p>It's time to gamble!</p>
+        <p><a class = "refLink" href="{% url 'user_points' %}">Roulette</a></p>
+        <p>More games in the future</p>
+        <p><form method="post" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <button class = "bassicButton" type="submit">Logout</button>
+    </form>
+    </p>
+    <p><a class = "refLink" href="{% url 'delete_account' %}">Delete Account</a></p>
+    </div>
+    
+    {% else %}
+        <p>You are not logged in.</p>
+        <p><a href="{% url 'login' %}">Login</a> or <a href="{% url 'register' %}">Register</a></p>
+    {% endif %}
+</body>
+</html>

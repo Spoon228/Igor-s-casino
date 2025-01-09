@@ -1,0 +1,126 @@
+body{
+    background-color: #124720;
+    font-family: sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+}
+table{
+    border-spacing: 1vw;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3vw;
+}
+td{
+    border-radius: 10vw;
+    width: 5vw;
+    height: 5vw;
+    font-size: 1.5vw;
+    text-align: center;
+    border: solid;
+}
+
+.Red{
+    background-color: #bf0000;
+}
+
+.Black{
+    background-color: black;
+}
+#Bet{
+    border: solid;
+    height: 3vw;
+    width: 10vw;
+    margin: auto;
+    text-align: center;
+    border-radius: 10vw;
+    padding: 1vw;
+    font-size: 1.5vw;
+    
+}
+.notting{
+    visibility: hidden;
+}
+.flexContainer{
+    display: flex;
+    width: 70vw;
+    margin: auto;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3vw;
+    padding: 1vw;
+}
+.flexContainer div{
+    text-align: center;
+}
+#betSize{
+    border: #FFFFFF;
+    border: solid;
+    border-radius: 10vw;
+    width: 15vw;
+    text-align: center;
+    font-size: 1.5vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+#betSizeButton{
+    border: none;
+    border-radius: 10vw;
+    width: 17vw;
+    text-align: center;
+    font-size: 1.5vw;
+    background-color: #fadb3e;
+}
+#pointsDisplayHeader{
+    border-radius: 10vw;
+    width: 20vw;
+    text-align: center;
+    font-size: 1.5vw;
+    color: white;
+}
+.navFlexContainer{
+    display: flex;
+    width: 97vw;
+    margin: auto;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1vw;
+}
+.navPoints{
+    border: #FFFFFF;
+    border: solid;
+    border-radius: 10vw;
+    width: 15vw;
+    text-align: center;
+    font-size: 1.5vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+#homeButton{
+    width: 10vw;
+    height: 10vw;
+    text-align: center;
+    font-size: 1.5vw;
+    color: white;
+}
+.refLink{
+    font-size: 1vw;
+    color: #FFFFFF;
+}
+.bassicButton{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: #FFFFFF;
+    border: solid;
+    border-radius: 10vw;
+    width: 10vw;
+    text-align: center;
+    font-size: 1.5vw;
+    color: #FFFFFF;
+}
+#homepageBackground{
+    width: 40vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    margin-left: 30vw;
+}
