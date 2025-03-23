@@ -9,11 +9,13 @@
 </head>
 <body>
     <div id = "homepageBackground">
-        <h1>Welcome to <br>Igor's leggal casino online</h1>
+        <h1>Welcome to <br>Igor's legal casino online</h1>
     {% if user.is_authenticated %}
         <p>Hello, {{ user.username }}!</p>
         <p>It's time to gamble!</p>
         <p><a class = "refLink" href="{% url 'user_points' %}">Roulette</a></p>
+        <p>--✨NOWE✨--</p>
+        <p><a class = "refLink" href="{% url 'blackjack' %}">Blackjack</a></p>
         <p>More games in the future</p>
         <p><form method="post" action="{% url 'logout' %}">
     {% csrf_token %}

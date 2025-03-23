@@ -89,3 +89,8 @@ def modify_points(request):
 
         return JsonResponse({'status': 'success', 'points': user_points.points})
     return JsonResponse({'status': 'error'}, status=400)
+
+def blackjack(request):
+    """Render the Blackjack game page."""
+    user_points, created = UserPoints.objects.get_or_create(user=request.user)
+    return render(request, 'users/blackjack.html', {'user_points': user_points})
